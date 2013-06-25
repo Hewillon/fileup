@@ -1,17 +1,19 @@
 <!-- upload_cos.html -->
 <html>
  <head>
-  <title>MultipartRequest¸¦ ÀÌ¿ëÇÑ ÆÄÀÏ ¾÷·Îµå</title>
+  <title>MultipartRequestï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Îµï¿½</title>
   <script type="text/javascript">
 	function fnCheck(){
 		if(document.formUpload.upfile.value == ""){
-			alert("¾÷·ÎµåÇÒ ÆÄÀÏÀ» ¼±ÅÃÇÏ¼¼¿ä");
+			alert("ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 			document.formUpload.upfile.focus();
 			return false;
 		} else if(document.formUpload.division.value == ""){
-			alert("Á¾·ù¸¦ ¼±ÅÃÇÏ¼¼¿ä");
+			alert("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 			document.formUpload.division.focus();
 			return false;
+			
+			
 		} 
 		return true;
 	}
@@ -20,38 +22,38 @@
  <body>
 
 	<form name="formUpload" method="post" action="upload_cos_ok.jsp" enctype="multipart/form-data" onSubmit="return fnCheck()">
-	<h2> MultipartRequest¸¦ ÀÌ¿ëÇÑ ÆÄÀÏ ¾÷·Îµå </h2>
+	<h2> MultipartRequest File upload </h2>
 	<table border="1" style="padding: 5px; width: 500px;">
 	<tr>
-	 <td align="right"> ÆÄÀÏ </td>
+	 <td align="right"> ï¿½ï¿½ï¿½ï¿½ </td>
 	 <td> 
 		<input type="file" name="upfile" onkeydown="event.returnValue=false;"> 
 	 </td>
 	</tr>
 	<tr>
-	 <td align="right"> Á¾·ù </td>
+	 <td align="right"> ï¿½ï¿½ï¿½ï¿½ </td>
 	 <td> 
 		<select name="division">
-		<option value="">-- ¼±ÅÃ --</option>
-		<option value="game">°ÔÀÓ</option>
-		<option value="util">À¯Æ¿¸®Æ¼</option>
-		<option value="doc">¹®¼­ÀÚ·á</option>
-		<option value="movie">µ¿¿µ»ó</option>
-		<option value="music">À½¾Ç</option>
-		<option value="etc">±âÅ¸</option>
+		<option value="">-- ï¿½ï¿½ï¿½ï¿½ --</option>
+		<option value="game">ï¿½ï¿½ï¿½ï¿½</option>
+		<option value="util">ï¿½ï¿½Æ¿ï¿½ï¿½Æ¼</option>
+		<option value="doc">ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½</option>
+		<option value="movie">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</option>
+		<option value="music">ï¿½ï¿½ï¿½ï¿½</option>
+		<option value="etc">ï¿½ï¿½Å¸</option>
 		</select>
 	 </td>
 	</tr>
 	<tr>
-	 <td align="right"> ¼³¸í </td>
+	 <td align="right"> ï¿½ï¿½ï¿½ï¿½ </td>
 	 <td>
 		<textarea name="contents" rows="5" cols="55"></textarea>
 	 </td>
 	</tr>
 	<tr>
 	 <td align="center" colspan="2">
-	  <input type="submit" value="¾÷·Îµå">
-	  <input type="reset" value="´Ù½ÃÀÛ¼º">
+	  <input type="submit" value="ï¿½ï¿½ï¿½Îµï¿½">
+	  <input type="reset" value="ï¿½Ù½ï¿½ï¿½Û¼ï¿½">
 	 </td>
 	</tr>
 	</table>
